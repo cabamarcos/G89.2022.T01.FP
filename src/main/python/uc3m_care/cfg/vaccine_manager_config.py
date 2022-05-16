@@ -2,3 +2,5 @@
 from pathlib import Path
 JSON_FILES_PATH = str(Path.home()) + "/Documents/pythonProjectFinal2/src/JsonFiles"
 JSON_FILES_RF2_PATH = JSON_FILES_PATH + "/RF2/"
+
+#marcos: "/Documents/pythonProjectFinal2/src/JsonFiles"

@@ -135,42 +135,46 @@ class TestGetVaccineDate(TestCase):
 
         self.assertEqual(hash_new, hash_original)
 
-
     @freeze_time("2022-03-08")
-    def test_get_vaccine_date_no_ok_data_manipulated( self ):
+
+    def test_get_vaccine_date_no_ok_data_manipulated(self):
         """ no quotes , not valid """
         file_test = JSON_FILES_RF2_PATH + "test_ok.json"
         my_manager = VaccineManager()
+
         file_store = JSON_FILES_PATH + "store_patient.json"
         file_store_date = JSON_FILES_PATH + "store_date.json"
 
+        import shutil
         if os.path.isfile(JSON_FILES_PATH + "swap.json"):
             os.remove(JSON_FILES_PATH + "swap.json")
         if not os.path.isfile(JSON_FILES_PATH + "store_patient_manipulated.json"):
             shutil.copy(JSON_FILES_RF2_PATH + "store_patient_manipulated.json",
                         JSON_FILES_PATH + "store_patient_manipulated.json")
-
-        #rename the manipulated patient's store
+        # rename the manipulated patient's store
         if os.path.isfile(file_store):
             print(file_store)
             print(JSON_FILES_PATH + "swap.json")
             os.rename(file_store, JSON_FILES_PATH + "swap.json")
-        os.rename(JSON_FILES_PATH + "store_patient_manipulated.json",file_store)
+        os.rename(JSON_FILES_PATH + "store_patient_manipulated.json", file_store)
 
-        file_store_date = AppointmentsJsonStore()
         # read the file to compare file content before and after method call
-        hash_original = file_store_date.data_hash()
-
+        if os.path.isfile(file_store_date):
+            with open(file_store_date, "r", encoding="utf-8", newline="") as file_org:
+                hash_original = hashlib.md5(file_org.__str__().encode()).hexdigest()
+        else:
+            hash_original = ""
         # check the method
+        # with self.assertRaises(VaccineManagementException) as c_m:
+        #   my_manager.get_vaccine_date(file_test)
 
-        exception_message = "Exception not raised"
         try:
             my_manager.get_vaccine_date(file_test)
-        #pylint: disable=broad-except
+            exception_message = "Exception not raised"
         except Exception as exception_raised:
             exception_message = exception_raised.__str__()
 
-        #restore the original patient's store
+        # restore the original patient's store
         os.rename(file_store, JSON_FILES_PATH + "store_patient_manipulated.json")
         if os.path.isfile(JSON_FILES_PATH + "swap.json"):
             print(JSON_FILES_PATH + "swap.json")
@@ -178,7 +182,11 @@ class TestGetVaccineDate(TestCase):
             os.rename(JSON_FILES_PATH + "swap.json", file_store)
 
         # read the file again to campare
-        hash_new = file_store_date.data_hash()
+        if os.path.isfile(file_store_date):
+            with open(file_store_date, "r", encoding="utf-8", newline="") as file:
+                hash_new = hashlib.md5(file.__str__().encode()).hexdigest()
+        else:
+            hash_new = ""
 
         self.assertEqual(exception_message, "Patient's data have been manipulated")
         self.assertEqual(hash_new, hash_original)
