@@ -300,6 +300,56 @@ class TestGetVaccineDate(TestCase):
         self.assertEqual(hash_new, hash_original)
 
     @freeze_time(DATE)
+    def test_get_vaccine_date_ok_BV_month_in_boundary(self):
+        """Month ok"""
+
+        file_test = JSON_FILES_RF2_PATH + "test_ok.json"
+        my_manager = VaccineManager()
+
+        # first , prepare my test , remove store patient
+        file_store = PatientsJsonStore()
+        file_store.delete_json_file()
+        file_store_date = AppointmentsJsonStore()
+        file_store_date.delete_json_file()
+
+        # add a patient in the store
+        my_manager.request_vaccination_id("78924cb0-075a-4099-a3ee-f3b562e805b9",
+                                          "minombre tienelalongitudmaxima",
+                                          "Regular", "+34123456789", "6")
+
+        date_valid = "2200-11-07"
+        # check the method
+        value = my_manager.get_vaccine_date(file_test, date_valid)
+        self.assertEqual("f24c00ce9b37a406ff85acee9d6051df7e178ab126a4730e2df8d1e483850119", value)
+        # check store_date
+        self.assertIsNotNone(file_store_date.find_item(value))
+
+    @freeze_time(DATE)
+    def test_get_vaccine_date_ok_BV_month_boundary(self):
+        """Month does not exist"""
+
+        file_test = JSON_FILES_RF2_PATH + "test_ok.json"
+        my_manager = VaccineManager()
+
+        # first , prepare my test , remove store patient
+        file_store = PatientsJsonStore()
+        file_store.delete_json_file()
+        file_store_date = AppointmentsJsonStore()
+        file_store_date.delete_json_file()
+
+        # add a patient in the store
+        my_manager.request_vaccination_id("78924cb0-075a-4099-a3ee-f3b562e805b9",
+                                          "minombre tienelalongitudmaxima",
+                                          "Regular", "+34123456789", "6")
+
+        date_valid = "2200-12-07"
+        # check the method
+        value = my_manager.get_vaccine_date(file_test, date_valid)
+        self.assertEqual("6aa17154a5906a6fb31851424a368fb2c2266a2dfb0a954d12227da8fb2c5c75", value)
+        # check store_date
+        self.assertIsNotNone(file_store_date.find_item(value))
+
+    @freeze_time(DATE)
     def test_get_date_no_ok_BV_month_0(self):
         """ month 0 """
         file_test = JSON_FILES_RF2_PATH + "test_ok.json"
@@ -320,6 +370,56 @@ class TestGetVaccineDate(TestCase):
         hash_new = file_store_date.data_hash()
 
         self.assertEqual(hash_new, hash_original)
+
+    @freeze_time(DATE)
+    def test_get_date_ok_BV_month_lower_bound(self):
+        """ month 1 """
+
+        file_test = JSON_FILES_RF2_PATH + "test_ok.json"
+        my_manager = VaccineManager()
+
+        # first , prepare my test , remove store patient
+        file_store = PatientsJsonStore()
+        file_store.delete_json_file()
+        file_store_date = AppointmentsJsonStore()
+        file_store_date.delete_json_file()
+
+        # add a patient in the store
+        my_manager.request_vaccination_id("78924cb0-075a-4099-a3ee-f3b562e805b9",
+                                          "minombre tienelalongitudmaxima",
+                                          "Regular", "+34123456789", "6")
+
+        date_valid = "2200-01-09"
+        # check the method
+        value = my_manager.get_vaccine_date(file_test, date_valid)
+        self.assertEqual("566a5d2b8069ecbddd727076c6c2e8a9607f71d1410d06a52faa971acc6008ad", value)
+        # check store_date
+        self.assertIsNotNone(file_store_date.find_item(value))
+
+    @freeze_time(DATE)
+    def test_get_date_ok_BV_month_in_lower_bound(self):
+        """ month 2 """
+
+        file_test = JSON_FILES_RF2_PATH + "test_ok.json"
+        my_manager = VaccineManager()
+
+        # first , prepare my test , remove store patient
+        file_store = PatientsJsonStore()
+        file_store.delete_json_file()
+        file_store_date = AppointmentsJsonStore()
+        file_store_date.delete_json_file()
+
+        # add a patient in the store
+        my_manager.request_vaccination_id("78924cb0-075a-4099-a3ee-f3b562e805b9",
+                                          "minombre tienelalongitudmaxima",
+                                          "Regular", "+34123456789", "6")
+
+        date_valid = "2200-02-09"
+        # check the method
+        value = my_manager.get_vaccine_date(file_test, date_valid)
+        self.assertEqual("6d8cc842ea5378b880d7d50ae87407395c9b054ebec6afe542b6f9c1d2fb00ce", value)
+        # check store_date
+        self.assertIsNotNone(file_store_date.find_item(value))
 
     @freeze_time(DATE)
     def test_get_date_no_ok_BV_days_exceed(self):
@@ -343,6 +443,58 @@ class TestGetVaccineDate(TestCase):
 
         self.assertEqual(hash_new, hash_original)
 
+
+    @freeze_time(DATE)
+    def test_get_date_ok_BV_day_upper_bound(self):
+        """ day ok """
+
+        file_test = JSON_FILES_RF2_PATH + "test_ok.json"
+        my_manager = VaccineManager()
+
+        # first , prepare my test , remove store patient
+        file_store = PatientsJsonStore()
+        file_store.delete_json_file()
+        file_store_date = AppointmentsJsonStore()
+        file_store_date.delete_json_file()
+
+        # add a patient in the store
+        my_manager.request_vaccination_id("78924cb0-075a-4099-a3ee-f3b562e805b9",
+                                          "minombre tienelalongitudmaxima",
+                                          "Regular", "+34123456789", "6")
+
+        date_valid = "2200-01-31"
+        # check the method
+        value = my_manager.get_vaccine_date(file_test, date_valid)
+        self.assertEqual("d32c8e4bc601c383896ab6f867ea438a99c872a120912537c85a627c0fa2de49", value)
+        # check store_date
+        self.assertIsNotNone(file_store_date.find_item(value))
+
+
+    @freeze_time(DATE)
+    def test_get_date_ok_BV_day_in_upper_bound(self):
+        """ day ok """
+
+        file_test = JSON_FILES_RF2_PATH + "test_ok.json"
+        my_manager = VaccineManager()
+
+        # first , prepare my test , remove store patient
+        file_store = PatientsJsonStore()
+        file_store.delete_json_file()
+        file_store_date = AppointmentsJsonStore()
+        file_store_date.delete_json_file()
+
+        # add a patient in the store
+        my_manager.request_vaccination_id("78924cb0-075a-4099-a3ee-f3b562e805b9",
+                                          "minombre tienelalongitudmaxima",
+                                          "Regular", "+34123456789", "6")
+
+        date_valid = "2200-01-30"
+        # check the method
+        value = my_manager.get_vaccine_date(file_test, date_valid)
+        self.assertEqual("0d573026b91ded8eeeeadafa8b9661b737e4c10e54340adcfcab808049d4779b", value)
+        # check store_date
+        self.assertIsNotNone(file_store_date.find_item(value))
+
     @freeze_time(DATE)
     def test_get_date_no_ok_BV_day_0(self):
         """day 0"""
@@ -364,6 +516,58 @@ class TestGetVaccineDate(TestCase):
         hash_new = file_store_date.data_hash()
 
         self.assertEqual(hash_new, hash_original)
+
+    @freeze_time(DATE)
+    def test_get_date_ok_BV_day_lower_bound(self):
+        """day ok"""
+
+        file_test = JSON_FILES_RF2_PATH + "test_ok.json"
+        my_manager = VaccineManager()
+
+        # first , prepare my test , remove store patient
+        file_store = PatientsJsonStore()
+        file_store.delete_json_file()
+        file_store_date = AppointmentsJsonStore()
+        file_store_date.delete_json_file()
+
+        # add a patient in the store
+        my_manager.request_vaccination_id("78924cb0-075a-4099-a3ee-f3b562e805b9",
+                                          "minombre tienelalongitudmaxima",
+                                          "Regular", "+34123456789", "6")
+
+        date_valid = "2200-08-01"
+        # check the method
+        value = my_manager.get_vaccine_date(file_test, date_valid)
+        self.assertEqual("62d09cad785f66c96d3853e81db12e12931521f17b41247bb6f11d8bf967ffd1", value)
+        # check store_date
+        self.assertIsNotNone(file_store_date.find_item(value))
+
+
+    @freeze_time(DATE)
+    def test_get_date_ok_BV_day_in_lower_bound(self):
+        """day ok"""
+
+        file_test = JSON_FILES_RF2_PATH + "test_ok.json"
+        my_manager = VaccineManager()
+
+        # first , prepare my test , remove store patient
+        file_store = PatientsJsonStore()
+        file_store.delete_json_file()
+        file_store_date = AppointmentsJsonStore()
+        file_store_date.delete_json_file()
+
+        # add a patient in the store
+        my_manager.request_vaccination_id("78924cb0-075a-4099-a3ee-f3b562e805b9",
+                                          "minombre tienelalongitudmaxima",
+                                          "Regular", "+34123456789", "6")
+
+        date_valid = "2200-08-02"
+        # check the method
+        value = my_manager.get_vaccine_date(file_test, date_valid)
+        self.assertEqual("dcf4c609b084f2d01862cc14ecdea0e29d0a551e8d9440931fe13f0788542505", value)
+        # check store_date
+        self.assertIsNotNone(file_store_date.find_item(value))
+
 
     @freeze_time(DATE)
     def test_get_vaccine_date_no_ok_BV_year_0(self):

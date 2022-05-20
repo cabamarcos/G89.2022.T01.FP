@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_get_vaccine_date_tests.TestGetVaccineDate-20220520182707" tests="22" file="test_get_vaccine_date_tests.py" time="0.283" timestamp="2022-05-20T18:27:08" failures="0" errors="0" skipped="0">
+	<testcase classname="test_get_vaccine_date_tests.TestGetVaccineDate" name="test_get_date_no_ok" time="0.032" timestamp="2022-05-20T18:27:08"/>
+	<testcase classname="test_get_vaccine_date_tests.TestGetVaccineDate" name="test_get_date_no_ok_BV_day_0" time="0.004" timestamp="2022-05-20T18:27:08"/>
+	<testcase classname="test_get_vaccine_date_tests.TestGetVaccineDate" name="test_get_date_no_ok_BV_days_exceed" time="0.004" timestamp="2022-05-20T18:27:08"/>
+	<testcase classname="test_get_vaccine_date_tests.TestGetVaccineDate" name="test_get_date_no_ok_BV_month_0" time="0.000" timestamp="2022-05-20T18:27:08"/>
+	<testcase classname="test_get_vaccine_date_tests.TestGetVaccineDate" name="test_get_date_no_ok_BV_one_char_less" time="0.004" timestamp="2022-05-20T18:27:08"/>
+	<testcase classname="test_get_vaccine_date_tests.TestGetVaccineDate" name="test_get_date_no_ok_BV_one_char_more" time="0.004" timestamp="2022-05-20T18:27:08"/>
+	<testcase classname="test_get_vaccine_date_tests.TestGetVaccineDate" name="test_get_date_no_ok_dash" time="0.003" timestamp="2022-05-20T18:27:08"/>
+	<testcase classname="test_get_vaccine_date_tests.TestGetVaccineDate" name="test_get_date_no_ok_data_manipulated" time="0.008" timestamp="2022-05-20T18:27:08"/>
+	<testcase classname="test_get_vaccine_date_tests.TestGetVaccineDate" name="test_get_date_no_ok_not_quotes" time="0.004" timestamp="2022-05-20T18:27:08"/>
+	<testcase classname="test_get_vaccine_date_tests.TestGetVaccineDate" name="test_get_date_no_ok_outdated" time="0.004" timestamp="2022-05-20T18:27:08"/>
+	<testcase classname="test_get_vaccine_date_tests.TestGetVaccineDate" name="test_get_date_no_ok_parameter" time="0.152" timestamp="2022-05-20T18:27:08"/>
+	<testcase classname="test_get_vaccine_date_tests.TestGetVaccineDate" name="test_get_date_ok" time="0.008" timestamp="2022-05-20T18:27:08"/>
+	<testcase classname="test_get_vaccine_date_tests.TestGetVaccineDate" name="test_get_date_ok_BV_day_in_lower_bound" time="0.004" timestamp="2022-05-20T18:27:08"/>
+	<testcase classname="test_get_vaccine_date_tests.TestGetVaccineDate" name="test_get_date_ok_BV_day_in_upper_bound" time="0.008" timestamp="2022-05-20T18:27:08"/>
+	<testcase classname="test_get_vaccine_date_tests.TestGetVaccineDate" name="test_get_date_ok_BV_day_lower_bound" time="0.008" timestamp="2022-05-20T18:27:08"/>
+	<testcase classname="test_get_vaccine_date_tests.TestGetVaccineDate" name="test_get_date_ok_BV_day_upper_bound" time="0.004" timestamp="2022-05-20T18:27:08"/>
+	<testcase classname="test_get_vaccine_date_tests.TestGetVaccineDate" name="test_get_date_ok_BV_month_in_lower_bound" time="0.004" timestamp="2022-05-20T18:27:08"/>
+	<testcase classname="test_get_vaccine_date_tests.TestGetVaccineDate" name="test_get_date_ok_BV_month_lower_bound" time="0.008" timestamp="2022-05-20T18:27:08"/>
+	<testcase classname="test_get_vaccine_date_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_BV_month_exc" time="0.004" timestamp="2022-05-20T18:27:08"/>
+	<testcase classname="test_get_vaccine_date_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_BV_year_0" time="0.004" timestamp="2022-05-20T18:27:08"/>
+	<testcase classname="test_get_vaccine_date_tests.TestGetVaccineDate" name="test_get_vaccine_date_ok_BV_month_boundary" time="0.008" timestamp="2022-05-20T18:27:08"/>
+	<testcase classname="test_get_vaccine_date_tests.TestGetVaccineDate" name="test_get_vaccine_date_ok_BV_month_in_boundary" time="0.004" timestamp="2022-05-20T18:27:08"/>
+</testsuite>
