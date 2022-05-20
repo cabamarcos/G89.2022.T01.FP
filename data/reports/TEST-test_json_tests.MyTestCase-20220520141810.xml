@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_json_tests.MyTestCase-20220520141810" tests="53" file="test_json_tests.py" time="0.436" timestamp="2022-05-20T14:18:11" failures="51" errors="0" skipped="0">
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_Valid_01" time="0.006" timestamp="2022-05-20T14:18:11"/>
+	<testcase classname="test_json_tests.MyTestCase" name="test_something" time="0.007" timestamp="2022-05-20T14:18:11"/>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_02" time="0.014" timestamp="2022-05-20T14:18:10">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 61, in test_Case_NV_02
+    test_file = self.test_json + "/test_dup_node1"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_03" time="0.008" timestamp="2022-05-20T14:18:10">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 69, in test_Case_NV_03
+    test_file = self.test_json + "/test_del_node1"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_04" time="0.008" timestamp="2022-05-20T14:18:10">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 77, in test_Case_NV_04
+    test_file = self.test_json + "/test_del_node3"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_05" time="0.008" timestamp="2022-05-20T14:18:10">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 85, in test_Case_NV_05
+    test_file = self.test_json + "/test_dup_node3.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_06" time="0.010" timestamp="2022-05-20T14:18:10">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 93, in test_Case_NV_06
+    test_file = self.test_json + "/test_del_node5.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_07" time="0.007" timestamp="2022-05-20T14:18:10">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 101, in test_Case_NV_07
+    test_file = self.test_json + "/test_dup_node2.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_08" time="0.008" timestamp="2022-05-20T14:18:10">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 109, in test_Case_NV_08
+    test_file = self.test_json + "/test_mod_node2.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_09" time="0.007" timestamp="2022-05-20T14:18:10">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 117, in test_Case_NV_09
+    test_file = self.test_json + "/test_del_node6.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_10" time="0.007" timestamp="2022-05-20T14:18:10">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 125, in test_Case_NV_10
+    test_file = self.test_json + "/test_dup_node6.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_11" time="0.008" timestamp="2022-05-20T14:18:10">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 133, in test_Case_NV_11
+    test_file = self.test_json + "/test_del_node11.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_12" time="0.008" timestamp="2022-05-20T14:18:10">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 141, in test_Case_NV_12
+    test_file = self.test_json + "/test_dup_node4.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_13" time="0.007" timestamp="2022-05-20T14:18:10">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 149, in test_Case_NV_13
+    test_file = self.test_json + "/test_mod_node4.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_14" time="0.007" timestamp="2022-05-20T14:18:10">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 157, in test_Case_NV_14
+    test_file = self.test_json + "/test_del_node12.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_15" time="0.007" timestamp="2022-05-20T14:18:10">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 165, in test_Case_NV_15
+    test_file = self.test_json + "/test_dup_node12.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_16" time="0.008" timestamp="2022-05-20T14:18:10">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 173, in test_Case_NV_16
+    test_file = self.test_json + "/test_del_node14.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_17" time="0.008" timestamp="2022-05-20T14:18:10">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 181, in test_Case_NV_17
+    test_file = self.test_json + "/test_dup_node14.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_18" time="0.007" timestamp="2022-05-20T14:18:10">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 189, in test_Case_NV_18
+    test_file = self.test_json + "/test_del_node16.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_19" time="0.013" timestamp="2022-05-20T14:18:10">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 197, in test_Case_NV_19
+    test_file = self.test_json + "/test_dup_node16.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_20" time="0.008" timestamp="2022-05-20T14:18:10">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 205, in test_Case_NV_20
+    test_file = self.test_json + "/test_del_node18.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_21" time="0.011" timestamp="2022-05-20T14:18:10">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 213, in test_Case_NV_21
+    test_file = self.test_json + "/test_dup_node18.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_22" time="0.011" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 221, in test_Case_NV_22
+    test_file = self.test_json + "/test_del_node20.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_23" time="0.012" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 229, in test_Case_NV_23
+    test_file = self.test_json + "/test_dup_node20.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_24" time="0.007" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 237, in test_Case_NV_24
+    test_file = self.test_json + "/test_del_node22.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_25" time="0.011" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 245, in test_Case_NV_25
+    test_file = self.test_json + "/test_dup_node22.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_26" time="0.009" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 253, in test_Case_NV_26
+    test_file = self.test_json + "/test_del_quotation.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_27" time="0.009" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 261, in test_Case_NV_27
+    test_file = self.test_json + "/test_dup_quotation.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_28" time="0.009" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 269, in test_Case_NV_28
+    test_file = self.test_json + "/test_mod_quotation.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_29" time="0.010" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 277, in test_Case_NV_29
+    test_file = self.test_json + "/test_del_separator.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_30" time="0.010" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 285, in test_Case_NV_30
+    test_file = self.test_json + "/test_dup_separator.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_31" time="0.010" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 293, in test_Case_NV_31
+    test_file = self.test_json + "/test_mod_separator.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_32" time="0.008" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 301, in test_Case_NV_32
+    test_file = self.test_json + "/test_del_separator2.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_33" time="0.009" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 309, in test_Case_NV_33
+    test_file = self.test_json + "/test_dup_separator2.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_34" time="0.009" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 317, in test_Case_NV_34
+    test_file = self.test_json + "/test_mod_separator2.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_35" time="0.009" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 325, in test_Case_NV_35
+    test_file = self.test_json + "/test_del_node45.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_36" time="0.006" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 333, in test_Case_NV_36
+    test_file = self.test_json +  "/test_dup_node24.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_37" time="0.008" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 341, in test_Case_NV_37
+    test_file = self.test_json + "/test_mod_node24.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_38" time="0.009" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 349, in test_Case_NV_38
+    test_file = self.test_json + "/test_del_node45.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_39" time="0.008" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 357, in test_Case_NV_39
+    test_file = self.test_json + "/test_dup_node28.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_40" time="0.011" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 365, in test_Case_NV_40
+    test_file = self.test_json + "/test_mod_node28.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_41" time="0.008" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 373, in test_Case_NV_41
+    test_file = self.test_json + "/test_del_node51.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_42" time="0.006" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 381, in test_Case_NV_42
+    test_file = self.test_json + "/test_dup_node31.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_43" time="0.007" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 389, in test_Case_NV_43
+    test_file = self.test_json + "/test_mod_node31.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_44" time="0.007" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 397, in test_Case_NV_44
+    test_file = self.test_json + "/test_del_node54.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_45" time="0.006" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 405, in test_Case_NV_45
+    test_file = self.test_json + "/test_dup_node35.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_46" time="0.006" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 413, in test_Case_NV_46
+    test_file = self.test_json + "/test_mod_node35.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_47" time="0.006" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 421, in test_Case_NV_47
+    test_file = self.test_json + "/test_del_node57.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_48" time="0.007" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 429, in test_Case_NV_48
+    test_file = self.test_json + "/test_dup_node38.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_49" time="0.007" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 437, in test_Case_NV_49
+    test_file = self.test_json + "/test_mod_node38.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_50" time="0.006" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 445, in test_Case_NV_50
+    test_file = self.test_json + "/test_del_node60.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_51" time="0.007" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 453, in test_Case_NV_51
+    test_file = self.test_json + "/test_dup_node42.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_json_tests.MyTestCase" name="test_Case_NV_52" time="0.006" timestamp="2022-05-20T14:18:11">
+		<failure type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "c:\users\alejandra\desktop\uni\segundo\software_devel\g89.2022.t01.fp\src\unittest\python\test_json_tests.py", line 461, in test_Case_NV_52
+    test_file = self.test_json + "/test_mod_node42.json"
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\ALEJANDRA\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+</testsuite>
