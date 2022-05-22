@@ -1,8 +1,8 @@
 {
 "date_signature":"72b72255619afeed8bd26861a2bc2caf72b72255619afeed8bd26861a2bc2caf",
-"cancellation_type": "Temporal/Final",
+"cancellation_type": "Temporal",
 "reason": "qwerty"
 "date_signature":"72b72255619afeed8bd26861a2bc2caf72b72255619afeed8bd26861a2bc2caf",
-"cancellation_type": "Temporal/Final",
+"cancellation_type": "Temporal",
 "reason": "qwerty"
 }
