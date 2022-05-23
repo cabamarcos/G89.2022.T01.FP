@@ -40,7 +40,7 @@ class TestVaccinePatient(TestCase):
         # adding new attribute
         my_manager.get_vaccine_date(file_test, "2022-03-08")
 
-    @freeze_time("2022-03-18")
+    @freeze_time("2022-03-08")
     def test_vaccine_patient_ok(self):
         """basic path , signature is found , and date = today"""
         my_manager = VaccineManager()

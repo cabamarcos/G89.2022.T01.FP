@@ -2,6 +2,7 @@
 from datetime import datetime
 import hashlib
 from freezegun import freeze_time
+from uc3m_care.storage.cancellation_json_store import CancellationJsonStore
 from uc3m_care.data.attribute.attribute_phone_number import PhoneNumber
 from uc3m_care.data.attribute.attribute_patient_system_id import PatientSystemId
 from uc3m_care.data.attribute.attribute_date_signature import DateSignature
@@ -10,8 +11,8 @@ from uc3m_care.data.vaccine_patient_register import VaccinePatientRegister
 from uc3m_care.exception.vaccine_management_exception import VaccineManagementException
 from uc3m_care.storage.appointments_json_store import AppointmentsJsonStore
 from uc3m_care.parser.appointment_json_parser import AppointmentJsonParser
+from uc3m_care.parser.cancellation_json_parser import CancellationJsonParser
 from uc3m_care.data.attribute.attribute_my_vaccine_date import VaccineDate
-
 
 # pylint: disable=too-many-instance-attributes
 class VaccinationAppointment:
@@ -105,7 +106,7 @@ class VaccinationAppointment:
         freezer.start()
         appointment = cls(appointment_record["_VaccinationAppointment__patient_sys_id"],
                           appointment_record["_VaccinationAppointment__phone_number"],
-                          datetime.fromtimestamp(appointment_record["_VaccinationAppointment__appointment_date"])
+                          datetime.fromtimestamp(appointment_record["_VaccinationAppointment__my_appointment_date"])
                           .date().isoformat()[:10])
         freezer.stop()
         return appointment
@@ -119,7 +120,33 @@ class VaccinationAppointment:
             appointment_parser.json_content[appointment_parser.CONTACT_PHONE_NUMBER_KEY],
             date_appointment)
         return new_appointment
+#################################################################################################################
+    @staticmethod
+    def create_cancellation_from_json_file(my_file):
+        """Creates the cancellation object and returns the data signature of the cancellation"""
 
+        parser_cancel = CancellationJsonParser(my_file)
+        date_signature_of_the_json = parser_cancel.json_content[parser_cancel.date_key]
+
+        try:
+            appointment_to_be_cancelled = VaccinationAppointment.get_appointment_from_date_signature(
+                date_signature_of_the_json
+            )
+        except VaccineManagementException as my_exception:
+            raise VaccineManagementException(
+                "There is no appointment with the given data") from my_exception
+
+        # check if the date signature of the appointment is outdated
+        if appointment_to_be_cancelled.issued_at < datetime.timestamp(datetime.now()):
+            raise VaccineManagementException("The date of the appointment has passed")
+
+        cancellations_store = CancellationJsonStore()
+        cancellations_store.add_item(parser_cancel.json_content)
+
+        # return the data signature of the cancellation
+        return parser_cancel.json_content[parser_cancel.date_key]
+
+#################################################################################################################
     def is_valid_today(self):
         """returns true if today is the appointment's date"""
         today = datetime.today().date()

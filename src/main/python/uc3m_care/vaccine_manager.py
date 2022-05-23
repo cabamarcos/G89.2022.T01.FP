@@ -42,10 +42,12 @@ class VaccineManager:
             """Register the vaccination of the patient"""
             appointment = VaccinationAppointment.get_appointment_from_date_signature(date_signature)
             return appointment.register_vaccination()
-
+#############################################################################################################
         def cancel_appointment(self, input_file):
-            """Cancel the vaccination of the patient"""
-            return None
+            """Function allowing the cancellation of an appointment """
+            cancellation_date_signature = VaccinationAppointment.create_cancellation_from_json_file(input_file)
+            return cancellation_date_signature
+#############################################################################################################
     instance = None
 
     def __new__(cls):

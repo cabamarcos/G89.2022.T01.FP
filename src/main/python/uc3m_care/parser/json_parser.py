@@ -28,7 +28,7 @@ class JsonParser():
             # file is not found
             raise VaccineManagementException("File is not found") from ex
         except json.JSONDecodeError as ex:
-            raise VaccineManagementException("JSON Decode Error - Wrong JSON Format") from ex
+            raise VaccineManagementException("Wrong JSON Format") from ex
         self._json_content = data
 
     @property

@@ -17,7 +17,7 @@ DATE = "2022-03-08"
 # parameter of the non-right tests
 param_list_nok = [('Case_NV_02', 'test_dup_node1.json', 'Wrong JSON Format'),
                   ('Case_NV_03', 'test_del_node1.json', 'Wrong JSON Format'),
-                  ('Case_NV_04', 'test_del_node3.json', 'Wrong JSON Format'),
+                  ('Case_NV_04', 'test_del_node3.json', 'Label in Json incorrect'), # since there are none
                   ('Case_NV_05', 'test_dup_node3.json', 'Wrong JSON Format'),
                   ('Case_NV_06', 'test_del_node5.json', 'Wrong JSON Format'),
                   ('Case_NV_07', 'test_mod_node2.json', 'Wrong JSON Format'),
@@ -53,48 +53,49 @@ param_list_nok = [('Case_NV_02', 'test_dup_node1.json', 'Wrong JSON Format'),
                   ('Case_NV_37', 'test_dup_separator2.json', 'Wrong JSON Format'),
                   ('Case_NV_37', 'test_dup_separator2.json', 'Wrong JSON Format'),
                   ('Case_NV_38', 'test_mod_separator2.json', 'Wrong JSON Format'),
-                  ('Case_NV_39', 'test_del_node45.json', 'Key of the JSON file not correct'),
-                  ('Case_NV_40', 'test_dup_node24.json', 'Key of the JSON file not correct'),
-                  ('Case_NV_41', 'test_mod_node24.json', 'Key of the JSON file not correct'),
+                  ('Case_NV_39', 'test_del_node45.json', 'Label in Json incorrect'),
+                  ('Case_NV_40', 'test_dup_node24.json', 'Label in Json incorrect'),
+                  ('Case_NV_41', 'test_mod_node24.json', 'Label in Json incorrect'),
                   ('Case_NV_42',
                    'test_del_node48.json',
-                   'The value of the attribute in JSON file isnot correct.'),
+                   'Value in Json incorrect'),
                   ('Case_NV_43',
                    'test_dup_node28.json',
-                   'The value of the attribute in JSON file isnot correct.'),
+                   'Value in Json incorrect'),
                   ('Case_NV_44',
                    'test_mod_node28.json',
-                   'The value of the attribute in JSON file isnot correct.'),
-                  ('Case_NV_45', 'test_del_node51.json', 'Key of the JSON file not correct'),
-                  ('Case_NV_46', 'test_dup_node31.json', 'Key of the JSON file not correct'),
-                  ('Case_NV_47', 'test_mod_node31.json', 'Key of the JSON file not correct'),
+                   'Value in Json incorrect'),
+                  ('Case_NV_45', 'test_del_node51.json', 'Label in Json incorrect'),
+                  ('Case_NV_46', 'test_dup_node31.json', 'Label in Json incorrect'),
+                  ('Case_NV_47', 'test_mod_node31.json', 'Label in Json incorrect'),
                   ('Case_NV_48',
                    'test_del_node54.json',
-                   'The value of the attribute in JSON file isnot correct.'),
+                   'Value in Json incorrect'),
                   ('Case_NV_49',
                    'test_dup_node35.json',
-                   'The value of the attribute in JSON file isnot correct.'),
+                   'Value in Json incorrect'),
                   ('Case_NV_50',
                    'test_mod_node35.json',
-                   'The value of the attribute in JSON file isnot correct.'),
-                  ('Case_NV_51', 'test_del_node57.json', 'Key of the JSON file not correct'),
-                  ('Case_NV_52', 'test_dup_node38.json', 'Key of the JSON file not correct'),
-                  ('Case_NV_53', 'test_mod_node38.json', 'Key of the JSON file not correct'),
+                   'Value in Json incorrect'),
+                  ('Case_NV_51', 'test_del_node57.json', 'Label in Json incorrect'),
+                  ('Case_NV_52', 'test_dup_node38.json', 'Label in Json incorrect'),
+                  ('Case_NV_53', 'test_mod_node38.json', 'Label in Json incorrect'),
                   ('Case_NV_54',
                    'test_del_node60.json',
-                   'The value of the attribute in JSON file isnot correct.'),
-                  ('Case_NV_55',
-                   'test_dup_node42.json',
-                   'The value of the attribute in JSON file isnot correct.'),
+                   'Value in Json incorrect'),
+                  # ('Case_NV_55',
+                  #  'test_dup_node42.json',
+                  #  'Value in Json incorrect'),
+                  # we do not include it since the error is impossible to be located
                   ('Case_NV_56',
                    'test_mod_node42.json',
-                   'The value of the attribute in JSON file isnot correct.')]
+                   'Value in Json incorrect')]
 
 
 # "The Cancellation couldn't been created. It already exists."
-# "The appointment with the given date_signature does not exist"
+# "The give date_signature does not correspond to any appointment"
 # "The appointment is not active, it has been already cancelled."
-# "The appointment with the given date_signature is outdated"
+# "The date of the appointment has passed"
 
 class TestCancellation(unittest.TestCase):
     """Test the JSONs """
@@ -130,14 +131,17 @@ class TestCancellation(unittest.TestCase):
 
     @freeze_time(DATE)
     def test_Json_Case_Valid_2(self):
-        """Checks the case where the Reason value has been duplicated"""
+        """
+        We need to check if reason is duplicated outside of the parametrized
+        test case, sice it is valid
+        """
 
         PatientsJsonStore().empty_json_file()
         AppointmentsJsonStore().empty_json_file()
         cancellation_json_storage = CancellationJsonStore()
         cancellation_json_storage.empty_json_file()
 
-        # Generate a valid json file
+
         file_test = JSON_FILES_RF2_PATH + "test_ok.json"
         my_manager = VaccineManager()
         my_manager.request_vaccination_id(
@@ -145,15 +149,15 @@ class TestCancellation(unittest.TestCase):
             "+34123456789", "6")
         my_manager.get_vaccine_date(file_test, DATE)
 
-        valid_json = JSON_FILES_COLLECTION + "test_dup_node42.json"
+        valid_json2 = JSON_FILES_COLLECTION + "test_dup_node42.json"
 
         expected_date_signature = "ced0953d112ab693b83d1ced965fcc670b558235361b9d1bd62536769a1efa3b"
-        date_signature = my_manager.cancel_appointment(valid_json)
-        self.assertEqual(expected_date_signature, date_signature)
-        self.assertIsNotNone(cancellation_json_storage.find_item(date_signature))
+        my_date_signature = my_manager.cancel_appointment(valid_json2)
+        self.assertEqual(expected_date_signature, my_date_signature)
+        self.assertIsNotNone(cancellation_json_storage.find_item(my_date_signature))
 
     @freeze_time(DATE)
-    def test_parametrized_Json_Case_NV(self):
+    def test_Case_NV(self):
         """all invalid cases"""
         PatientsJsonStore().empty_json_file()
         AppointmentsJsonStore().empty_json_file()
@@ -181,7 +185,7 @@ class TestCancellation(unittest.TestCase):
                 ))
 
     @freeze_time(DATE)
-    def test_not_valid_appointment_does_not_exist(self):
+    def test_the_appointment_does_not_exist(self):
         """cancellation already exists"""
         PatientsJsonStore().empty_json_file()
         AppointmentsJsonStore().empty_json_file()
@@ -200,14 +204,15 @@ class TestCancellation(unittest.TestCase):
             cancellation_json = JSON_FILES_COLLECTION + "test_ok.json"
             date_signature = my_manager.cancel_appointment(cancellation_json)
         self.assertEqual(
-            "The appointment with the given date_signature does not exist",
+            "There is no appointment with the given data",
             context.exception.message
         )
         self.assertIsNone(cancellation_json_storage.find_item(expected_date_signature))
 
+
     @freeze_time(DATE)
-    def test_not_valid_appointment_is_outdated(self):
-        """Checks if an error is raised when a cancellation is outdated"""
+    def test_not_valid_appointment_day_has_passed(self):
+        """The appointment has already been cancelled"""
         PatientsJsonStore().empty_json_file()
         AppointmentsJsonStore().empty_json_file()
         cancellation_json_storage = CancellationJsonStore()
@@ -228,18 +233,18 @@ class TestCancellation(unittest.TestCase):
 
         freezer.start()
         with self.assertRaises(VaccineManagementException) as context:
-            cancellation_json = JSON_FILES_COLLECTION + "test_right.json"
+            cancellation_json = JSON_FILES_COLLECTION + "test_ok.json"
             date_signature = my_manager.cancel_appointment(cancellation_json)
         self.assertEqual(
-            "The appointment with the given date_signature is outdated",
+            "The date of the appointment has passed",
             context.exception.message
         )
         self.assertIsNone(cancellation_json_storage.find_item(expected_date_signature))
         freezer.stop()
 
     @freeze_time(DATE)
-    def test_not_valid_appointment_already_cancelled(self):
-        """Checks if an error is raised when a cancellation is already cancelled"""
+    def test_not_valid_appointment_has_already_been_cancelled(self):
+        """The appointment has already been cancelled"""
         PatientsJsonStore().empty_json_file()
         AppointmentsJsonStore().empty_json_file()
         cancellation_json_storage = CancellationJsonStore()
@@ -247,7 +252,7 @@ class TestCancellation(unittest.TestCase):
 
         expected_date_signature = "ced0953d112ab693b83d1ced965fcc670b558235361b9d1bd62536769a1efa3b"
 
-        cancellation_json = JSON_FILES_COLLECTION + "test_right.json"
+        cancellation_json = JSON_FILES_COLLECTION + "test_ok.json"
 
         # Generate a valid json file
         my_manager = VaccineManager()
@@ -262,7 +267,7 @@ class TestCancellation(unittest.TestCase):
         with self.assertRaises(VaccineManagementException) as context:
             date_signature = my_manager.cancel_appointment(cancellation_json)
         self.assertEqual(
-            "The Cancellation couldn't been created. It already exists.",
+            "The Cancellation has been already processed.",
             context.exception.message
         )
         self.assertIsNotNone(cancellation_json_storage.find_item(expected_date_signature))

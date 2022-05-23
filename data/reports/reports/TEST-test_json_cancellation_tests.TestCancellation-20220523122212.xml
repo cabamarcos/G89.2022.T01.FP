@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_json_cancellation_tests.TestCancellation-20220523122212" tests="6" file="test_json_cancellation_tests.py" time="0.359" timestamp="2022-05-23T12:22:13" failures="0" errors="0" skipped="0">
+	<testcase classname="test_json_cancellation_tests.TestCancellation" name="test_Case_Valid_01" time="0.010" timestamp="2022-05-23T12:22:13"/>
+	<testcase classname="test_json_cancellation_tests.TestCancellation" name="test_Json_Case_Valid_2" time="0.011" timestamp="2022-05-23T12:22:13"/>
+	<testcase classname="test_json_cancellation_tests.TestCancellation" name="test_not_valid_appointment_already_cancelled" time="0.010" timestamp="2022-05-23T12:22:13"/>
+	<testcase classname="test_json_cancellation_tests.TestCancellation" name="test_not_valid_appointment_does_not_exist" time="0.006" timestamp="2022-05-23T12:22:13"/>
+	<testcase classname="test_json_cancellation_tests.TestCancellation" name="test_not_valid_appointment_is_outdated" time="0.009" timestamp="2022-05-23T12:22:13"/>
+	<testcase classname="test_json_cancellation_tests.TestCancellation" name="test_parametrized_Json_Case_NV" time="0.313" timestamp="2022-05-23T12:22:13"/>
+</testsuite>

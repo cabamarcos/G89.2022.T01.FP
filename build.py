@@ -10,6 +10,9 @@ use_plugin("python.pycharm")
 name = "GE3_2022"
 default_task = "publish"
 
+description ="",
+long_description = "",
+long_description_content_type = "text/markdown"
 
 @init
 def set_properties(project):
